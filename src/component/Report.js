@@ -4,39 +4,66 @@ import RobIcon from './Icons/Robbery.jpg';
 import FightIcon from './Icons/Fighting.png';
 import FireIcon from './Icons/fire.jpg';
 import OtherIcon from './Icons/others.jpg'
+import { Link } from 'react-router-dom'
 
 
 function Report() {
   return (
     <div className="Aj_ReportContainer">
-      <div className="Aj_ReportContainerWrap">
-        {/* <div className="ReportText_Holder">MAKE A REPORT</div> */}
-        <br />
-        <div className="reportCards_Holder">
-          <div className="FirstReport_Cards">
-            <div style={{
-              height: "90px",
-              width: "100px",
-              fontWeight: "bolder"
-              // color: "white"
-            }}>
-              <img src={RobIcon} alt="RobIcon" style={{
-                width: "100%",
-                height: "100%",
-                // backgroundColor: "#646876",
-              }} />
-              Robbery
-              </div>
+      <Link to="/ReportInput" style={{ textDecoration: "none" }}>
+        <div className="icon_holder">
 
+          <img src={RobIcon} style={{
+            height: "50%",
+            width: "50%",
+          }} />
 
-
-
-
-
-          </div>
+          <h2>Robbery</h2>
         </div>
+      </Link>
+
+
+
+      <Link to="/ReportInput" style={{ textDecoration: "none" }}>
+        <div className="icon_holder">
+
+          <img src={FightIcon} style={{
+            height: "50%",
+            width: "50%",
+          }} />
+
+          <h2>Fighting</h2>
+        </div>
+      </Link>
+
+
+
+
+      <div className="icon_holder">
+
+        <img src={FireIcon} style={{
+          height: "50%",
+          width: "50%",
+        }} />
+
+        <h2>Fire Outbreak</h2>
       </div>
+
+
+
+
+      <div className="icon_holder">
+
+        <img src={OtherIcon} style={{
+          height: "50%",
+          width: "50%",
+        }} />
+
+        <h2>Others</h2>
+      </div>
+
     </div>
+
   )
 }
 

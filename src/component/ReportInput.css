@@ -1,0 +1,14 @@
+.Input_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Input_Wrapper {
+  display: flex;
+  height:"100vh";
+width:"100vw";
+align-items: center;
+flex-direction: column;
+margin-top: 20px;
+}
