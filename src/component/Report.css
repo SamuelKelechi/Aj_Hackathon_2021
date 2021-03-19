@@ -1,0 +1,36 @@
+.Aj_ReportContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Aj_ReportContainerWrap {
+  flex-wrap: wrap;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.reportCards_Holder {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 100px;
+
+}
+
+.FirstReport_Cards {
+  display: flex;
+  /* width: 50%; */
+  justify-content: space-around;
+}
+
+/* 
+@media screen and (max-width: 320px) {
+  .FirstReport_Cards {
+    display: flex;
+    flex-direction: column;
+  }
+} */
